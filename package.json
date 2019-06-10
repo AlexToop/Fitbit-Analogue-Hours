@@ -1,0 +1,32 @@
+{
+  "fitbit": {
+    "appUUID": "36ea67bb-ace2-46ca-8081-995a68a50897",
+    "appType": "clockface",
+    "appDisplayName": "split-hours",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_location",
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "split-hours"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0",
+    "@fitbit/sdk-cli": "^1.6.0"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}

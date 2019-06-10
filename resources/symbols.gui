@@ -1,0 +1,17 @@
+<svg>
+  <defs>
+    <!-- hours -->
+    <symbol id="hours_bar">
+      <line class="time-hand" />
+      <line class="hours-hand-back" />
+      <line class="hours-hand" />
+    </symbol>
+
+    <!-- minutes -->
+    <symbol id="minutes_bar">
+      <line class="time-hand" />
+      <line class="minutes-hand-back" />
+      <line class="minutes-hand" />
+    </symbol>
+  </defs>
+</svg>
