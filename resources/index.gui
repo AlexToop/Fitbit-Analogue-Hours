@@ -8,18 +8,18 @@
     </g>
   
     <!-- numbers as normal -->
-    <text id="no1" class="color-primary font-numbers" x="74%" y="14%">1</text>
-    <text id="no2" class="color-primary font-numbers" x="90%" y="29%">2</text>
-    <text id="no3" class="color-primary font-numbers" x="90%" y="54%">3</text>
-    <text id="no4" class="color-primary font-numbers" x="90%" y="79%">4</text>
-    <text id="no5" class="color-primary font-numbers" x="74%" y="94%">5</text>
-    <text id="no6" class="color-primary font-numbers" x="50%" y="94%">6</text>
-    <text id="no7" class="color-primary font-numbers" x="26%" y="94%">7</text>
-    <text id="no8" class="color-primary font-numbers" x="10%" y="79%">8</text>
-    <text id="no9" class="color-primary font-numbers" x="10%" y="54%">9</text>
-    <text id="no10" class="color-primary font-numbers" x="10%" y="29%">10</text>
-    <text id="no11" class="color-primary font-numbers" x="26%" y="14%">11</text>
-    <text id="no12" class="color-primary font-numbers" x="50%" y="14%">12</text>
+    <text id="no1" class="color-primary font-numbers display-none" x="74%" y="14%">1</text>
+    <text id="no2" class="color-primary font-numbers display-none" x="90%" y="29%">2</text>
+    <text id="no3" class="color-primary font-numbers display-none" x="90%" y="54%">3</text>
+    <text id="no4" class="color-primary font-numbers display-none" x="90%" y="79%">4</text>
+    <text id="no5" class="color-primary font-numbers display-none" x="74%" y="94%">5</text>
+    <text id="no6" class="color-primary font-numbers display-none" x="50%" y="94%">6</text>
+    <text id="no7" class="color-primary font-numbers display-none" x="26%" y="94%">7</text>
+    <text id="no8" class="color-primary font-numbers display-none" x="10%" y="79%">8</text>
+    <text id="no9" class="color-primary font-numbers display-none" x="10%" y="54%">9</text>
+    <text id="no10" class="color-primary font-numbers display-none" x="10%" y="29%">10</text>
+    <text id="no11" class="color-primary font-numbers display-none" x="26%" y="14%">11</text>
+    <text id="no12" class="color-primary font-numbers display-none" x="50%" y="14%">12</text>
 
     <!-- numbers as dots -->
     <text id="no1dot" class="color-primary font-numbers" x="74%" y="10%">.</text>
@@ -40,6 +40,7 @@
     <text id="js-stats2" class="color-primary font-stats2" x="50%" y="25%+34" />
 
     <svg width="40" height="40" x="50%-20" y="65%">
+        <text id="day" class="color-primary font-day" x="50%" y="10%">NA</text>
         <text id="date" class="color-primary font-date" x="50%" y="50%+10" />
     </svg>
 

@@ -1,6 +1,6 @@
 function mySettings(props) {
     let colorSet = [
-        {color: "black"}, {color: "#334764"}, {color: "#2A363B"}, {color: "#A6AEAC"}, {color: "#c4b9a4"}, {color: "#E2B292"}, {color: "#f57d26"}, {color: "#E84A5F"},  {color: "#DE2626"}
+        {color: "black"}, {color: "#334764"}, {color: "#2A363B"}, {color: "#A6AEAC"}, {color: "#c4b9a4"}, {color: "#E2B292"}, {color: "#f57d26"}, {color: "#E84A5F"},  {color: "#DE2626"}, {color: "#F8F8FF"}, {color: "#488214"}, {color: "#00BFFF"}
     ];
     return (
         <Page>

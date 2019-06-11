@@ -10,6 +10,7 @@ import {vibration} from "haptics";
 import * as messaging from "messaging";
 
 const dateText = document.getElementById('date');
+const dayText = document.getElementById('day');
 const statsText1 = document.getElementById('js-stats1');
 const statsText2 = document.getElementById('js-stats2');
 const statsDivi = document.getElementById('js-bat-division');
@@ -43,7 +44,7 @@ const no8dot = document.getElementById('no8dot');
 const no9dot = document.getElementById('no9dot');
 const no10dot = document.getElementById('no10dot');
 const no11dot = document.getElementById('no11dot');
-const no12dot = document.getElementById('no12dot');minutes_bar
+const no12dot = document.getElementById('no12dot');
 
 const hoursColourBar = document.getElementById('hours-hand');
 const minutesColourBar = document.getElementById('minutes-hand');
@@ -65,6 +66,7 @@ clock.ontick = (evt) => {
   // todo add day gui update
   var day = util.getDay(date.getDay());
   dateText.text = date.getDate();
+  dayText.text = day;
 
   updateBattery(battery);
   updateActivity(today);
@@ -137,6 +139,7 @@ messaging.peerSocket.onmessage = evt => {
     statsDivi.style.fill = color;
     statsText2.style.fill = color;
     dateText.style.fill = color;
+    dayText.style.fill = color;
 
 
     hoursColourBar.style.fill = color;

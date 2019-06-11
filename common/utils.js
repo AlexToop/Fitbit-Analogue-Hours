@@ -8,13 +8,13 @@ export function zeroPad(i) {
 
 export function getDay(dayNo) {
     var weekday = new Array(7);
-    weekday[0] = "SUN";
-    weekday[1] = "MON";
-    weekday[2] = "TUE";
-    weekday[3] = "WED";
-    weekday[4] = "THU";
-    weekday[5] = "FRI";
-    weekday[6] = "SAT";
+    weekday[0] = "SU";
+    weekday[1] = "MO";
+    weekday[2] = "TU";
+    weekday[3] = "WE";
+    weekday[4] = "TH";
+    weekday[5] = "FR";
+    weekday[6] = "SA";
     return weekday[dayNo];
 }
 

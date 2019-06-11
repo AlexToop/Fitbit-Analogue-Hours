@@ -63,6 +63,15 @@
 }
 
 
+.font-day {
+    font-family: "Colfax-Bold";
+    width: 40;
+    height: 40;
+    font-size: 20;
+    text-anchor: middle;
+}
+
+
 .font-numbers {
     font-family: "Colfax-Bold";
     width: 40;
@@ -124,4 +133,9 @@ line.hours-hand {
     x2: 0;
     y2: -32%+1;
     stroke-width: 6;
+}
+
+
+.display-none {
+    display: none;
 }
