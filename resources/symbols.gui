@@ -4,14 +4,14 @@
     <symbol id="hours_bar">
       <line class="time-hand" />
       <line class="hours-hand-back" />
-      <line class="hours-hand" />
+      <line id="hours-hand" class="hours-hand" />
     </symbol>
 
     <!-- minutes -->
     <symbol id="minutes_bar">
       <line class="time-hand" />
       <line class="minutes-hand-back" />
-      <line class="minutes-hand" />
+      <line id="minutes-hand" class="minutes-hand" />
     </symbol>
   </defs>
 </svg>
