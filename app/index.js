@@ -77,7 +77,7 @@ if (HeartRateSensor) {
   const hrm = new HeartRateSensor({frequency: 1});
   statsText2.text = "NA HR";
   hrm.addEventListener("reading", () => {
-    statsText2.text = hrm.heartRate + " HR";
+    statsText2.text = hrm.heartRate + "H";
   });
   sensors.push(hrm);
   hrm.start();
@@ -216,5 +216,5 @@ function updateBattery(battery) {
 
 
 function updateActivity(today) {
-  statsText1.text = today.adjusted.steps + " ST";
+  statsText1.text = (today.adjusted.steps / 1000).toFixed(1) + "K";
 }
