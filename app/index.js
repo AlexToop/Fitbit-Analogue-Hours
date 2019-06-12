@@ -75,9 +75,9 @@ clock.ontick = (evt) => {
 
 if (HeartRateSensor) {
   const hrm = new HeartRateSensor({frequency: 1});
-  statsText2.text = "NA HR";
+  statsText2.text = "NA";
   hrm.addEventListener("reading", () => {
-    statsText2.text = hrm.heartRate + "H";
+    statsText2.text = hrm.heartRate + "";
   });
   sensors.push(hrm);
   hrm.start();
@@ -206,15 +206,15 @@ messaging.peerSocket.onmessage = evt => {
 
 
 function updateBattery(battery) {
-  noBatteryDots = parseInt(battery.chargeLevel/20) + 1;
+  noBatteryDots = parseInt(battery.chargeLevel/25) + 1;
   var batteryText = ".";
   for (var i = 1; i < noBatteryDots; i++){
-    batteryText += "  .";
+    batteryText += " .";
   }
   statsDivi.text = batteryText;
 }
 
 
 function updateActivity(today) {
-  statsText1.text = (today.adjusted.steps / 1000).toFixed(1) + "K";
+  statsText1.text = (today.adjusted.steps / 1000).toFixed(1) + "";
 }

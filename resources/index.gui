@@ -34,10 +34,10 @@
     <text id="no10dot" class="color-primary font-numbers" x="10%" y="28%">.</text>
     <text id="no11dot" class="color-primary font-numbers" x="26%" y="10%">.</text>
     <text id="no12dot" class="color-primary font-numbers" x="50%" y="14%">12</text>
-     
+
     <text id="js-stats1" class="color-primary font-stats1" x="50%" y="25%+8" />
-    <text id="js-bat-division" class="color-primary stats-division" x="50%" y="25%+15"></text>
-    <text id="js-stats2" class="color-primary font-stats2" x="50%" y="25%+34" />
+    <text id="js-bat-division" class="color-primary stats-division" x="50%" y="25%+16"></text>
+    <text id="js-stats2" class="color-primary font-stats2" x="50%" y="25%+35" />
 
     <svg width="40" height="40" x="50%-20" y="65%">
         <text id="day" class="color-primary font-day" x="50%" y="10%">NA</text>
