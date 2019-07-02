@@ -45,6 +45,18 @@ const no9dot = document.getElementById('no9dot');
 const no10dot = document.getElementById('no10dot');
 const no11dot = document.getElementById('no11dot');
 const no12dot = document.getElementById('no12dot');
+const no1min = document.getElementById('no1min');
+const no2min = document.getElementById('no2min');
+const no3min = document.getElementById('no3min');
+const no4min = document.getElementById('no4min');
+const no5min = document.getElementById('no5min');
+const no6min = document.getElementById('no6min');
+const no7min = document.getElementById('no7min');
+const no8min = document.getElementById('no8min');
+const no9min = document.getElementById('no9min');
+const no10min = document.getElementById('no10min');
+const no11min = document.getElementById('no11min');
+const no12min = document.getElementById('no12min');
 
 const hoursColourBar = document.getElementById('hours-hand');
 const minutesColourBar = document.getElementById('minutes-hand');
@@ -134,6 +146,18 @@ messaging.peerSocket.onmessage = evt => {
     no10dot.style.fill = color;
     no11dot.style.fill = color;
     no12dot.style.fill = color;
+    no1min.style.fill = color;
+    no2min.style.fill = color;
+    no3min.style.fill = color;
+    no4min.style.fill = color;
+    no5min.style.fill = color;
+    no6min.style.fill = color;
+    no7min.style.fill = color;
+    no8min.style.fill = color;
+    no9min.style.fill = color;
+    no10min.style.fill = color;
+    no11min.style.fill = color;
+    no12min.style.fill = color;
 
     statsText1.style.fill = color;
     statsDivi.style.fill = color;
@@ -174,6 +198,18 @@ messaging.peerSocket.onmessage = evt => {
       no10dot.style.display = "none";
       no11dot.style.display = "none";
       no12dot.style.display = "none";
+      no1min.style.display = "none";
+      no2min.style.display = "none";
+      no3min.style.display = "none";
+      no4min.style.display = "none";
+      no5min.style.display = "none";
+      no6min.style.display = "none";
+      no7min.style.display = "none";
+      no8min.style.display = "none";
+      no9min.style.display = "none";
+      no10min.style.display = "none";
+      no11min.style.display = "none";
+      no12min.style.display = "none";
     }
     if (styleString == "Numbers and dots"){
       no1.style.display = "none";
@@ -200,6 +236,56 @@ messaging.peerSocket.onmessage = evt => {
       no10dot.style.display = "inline";
       no11dot.style.display = "inline";
       no12dot.style.display = "inline";
+      no1min.style.display = "none";
+      no2min.style.display = "none";
+      no3min.style.display = "none";
+      no4min.style.display = "none";
+      no5min.style.display = "none";
+      no6min.style.display = "none";
+      no7min.style.display = "none";
+      no8min.style.display = "none";
+      no9min.style.display = "none";
+      no10min.style.display = "none";
+      no11min.style.display = "none";
+      no12min.style.display = "none";
+    }
+    if (styleString == "Hours and minutes"){
+      no1.style.display = "none";
+      no2.style.display = "none";
+      no3.style.display = "none";
+      no4.style.display = "none";
+      no5.style.display = "none";
+      no6.style.display = "none";
+      no7.style.display = "none";
+      no8.style.display = "none";
+      no9.style.display = "none";
+      no10.style.display = "none";
+      no11.style.display = "none";
+      no12.style.display = "none";
+      no1dot.style.display = "none";
+      no2dot.style.display = "none";
+      no3dot.style.display = "none";
+      no4dot.style.display = "none";
+      no5dot.style.display = "none";
+      no6dot.style.display = "none";
+      no7dot.style.display = "none";
+      no8dot.style.display = "none";
+      no9dot.style.display = "none";
+      no10dot.style.display = "none";
+      no11dot.style.display = "none";
+      no12dot.style.display = "none";
+      no1min.style.display = "inline";
+      no2min.style.display = "inline";
+      no3min.style.display = "inline";
+      no4min.style.display = "inline";
+      no5min.style.display = "inline";
+      no6min.style.display = "inline";
+      no7min.style.display = "inline";
+      no8min.style.display = "inline";
+      no9min.style.display = "inline";
+      no10min.style.display = "inline";
+      no11min.style.display = "inline";
+      no12min.style.display = "inline";
     }
   }
 };

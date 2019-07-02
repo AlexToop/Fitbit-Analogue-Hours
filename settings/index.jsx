@@ -1,6 +1,35 @@
 function mySettings(props) {
     let colorSet = [
-        {color: "black"}, {color: "#334764"}, {color: "#2A363B"}, {color: "#A6AEAC"}, {color: "#c4b9a4"}, {color: "#E2B292"}, {color: "#f57d26"}, {color: "#E84A5F"},  {color: "#DE2626"}, {color: "#F8F8FF"}, {color: "#488214"}, {color: "#00BFFF"}, {color: "#000000"}, {color: "#000000"}, {color: "#4682B4"}, {color: "#ADD8E6"}, {color: "#20B2AA"}, {color: "#d2b48c"}, {color: "#8B4513"}, {color: "#696969"}, {color: "#000080"}
+        {color: "black"},
+        {color: "#334764"},
+        {color: "#c4b9a4"},
+        {color: "#f57d26"},
+        {color: "#000000"},
+        {color: "#3182DE"},
+        {color: "#8080FF"},
+        {color: "#14D3F5"},
+        {color: "#505050"},
+        {color: "#303030"},
+        {color: "#00A629"},
+        {color: "#00A629"},
+        {color: "#5B4CFF"},
+        {color: "#BCD8F8"},
+        {color: "#A0A0A0"},
+        {color: "#B8FC68"},
+        {color: "#F80070"},
+        {color: "#5BE37D"},
+        {color: "#FC6B3A"},
+        {color: "#FFCC33"},
+        {color: "#F83478"},
+        {color: "#A51E7C"},
+        {color: "#BD4EFC"},
+        {color: "#F83C40"},
+        {color: "#7090B5"},
+        {color: "#1B2C40"},
+        {color: "#D828B8"},
+        {color: "#FFFFFF"},
+        {color: "#E4FA3C"},
+        {color: "#394003"}
     ];
     return (
         <Page>
@@ -32,7 +61,8 @@ function mySettings(props) {
                     settingsKey="numbersStyle"
                     options={[
                         {name: "All numbers"},
-                        {name: "Numbers and dots"}
+                        {name: "Numbers and dots"},
+                        {name: "Hours and minutes"}
                     ]}
                 />
             </Section>

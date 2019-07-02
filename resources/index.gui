@@ -35,6 +35,20 @@
     <text id="no11dot" class="color-primary font-numbers" x="26%" y="10%">.</text>
     <text id="no12dot" class="color-primary font-numbers" x="50%" y="14%">12</text>
 
+    <!-- hours and minutes -->
+    <text id="no1min" class="color-primary font-numbers-minutes display-none" x="74%" y="14%">5</text>
+    <text id="no2min" class="color-primary font-numbers-minutes display-none" x="90%" y="29%">10</text>
+    <text id="no3min" class="color-primary font-numbers display-none" x="91%" y="54%">3</text>
+    <text id="no4min" class="color-primary font-numbers-minutes display-none" x="90%" y="76%">20</text>
+    <text id="no5min" class="color-primary font-numbers-minutes display-none" x="74%" y="94%">25</text>
+    <text id="no6min" class="color-primary font-numbers display-none" x="50%" y="94%">6</text>
+    <text id="no7min" class="color-primary font-numbers-minutes display-none" x="26%" y="94%">35</text>
+    <text id="no8min" class="color-primary font-numbers-minutes display-none" x="10%" y="76%">40</text>
+    <text id="no9min" class="color-primary font-numbers display-none" x="10%" y="54%">9</text>
+    <text id="no10min" class="color-primary font-numbers-minutes display-none" x="10%" y="29%">50</text>
+    <text id="no11min" class="color-primary font-numbers-minutes display-none" x="26%" y="14%">55</text>
+    <text id="no12min" class="color-primary font-numbers display-none" x="50%" y="14%">12</text>
+
     <text id="js-stats1" class="color-primary font-stats1" x="50%" y="25%+8" />
     <text id="js-bat-division" class="color-primary stats-division" x="50%" y="25%+16"></text>
     <text id="js-stats2" class="color-primary font-stats2" x="50%" y="25%+35" />
