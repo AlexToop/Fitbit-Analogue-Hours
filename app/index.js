@@ -18,6 +18,9 @@ const hoursBar = document.getElementById('hours');
 const minutesBar = document.getElementById('minutes');
 const backTile = document.getElementById('back');
 
+const hrImg = document.getElementById('heart-rate-img');
+const stepImg = document.getElementById('steps-img');
+
 const inv1 = document.getElementById('inv1');
 const inv2 = document.getElementById('inv2');
 const background = document.getElementById('background');
@@ -165,6 +168,8 @@ messaging.peerSocket.onmessage = evt => {
     dateText.style.fill = color;
     dayText.style.fill = color;
 
+    hrImg.style.fill = color;
+    stepImg.style.fill = color;
 
     hoursColourBar.style.fill = color;
     minutesColourBar.style.fill = color;
@@ -292,15 +297,17 @@ messaging.peerSocket.onmessage = evt => {
 
 
 function updateBattery(battery) {
-  noBatteryDots = parseInt(battery.chargeLevel/25) + 1;
-  var batteryText = ".";
-  for (var i = 1; i < noBatteryDots; i++){
-    batteryText += " .";
-  }
-  statsDivi.text = batteryText;
+  // noBatteryDots = parseInt(battery.chargeLevel/25) + 1;
+  // var batteryText = "|";
+  // for (var i = 1; i < noBatteryDots; i++){
+  //   batteryText += " |";
+  // }
+  statsDivi.text = battery.chargeLevel + "%";
+
 }
 
 
 function updateActivity(today) {
-  statsText1.text = (today.adjusted.steps / 1000).toFixed(1) + "";
+  // toFixed can be changed to decimal place accuracy
+  statsText1.text = (today.adjusted.steps / 1000).toFixed(0) + "K";
 }
