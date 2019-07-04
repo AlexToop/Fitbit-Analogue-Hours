@@ -36,30 +36,30 @@
     <text id="no12dot" class="color-primary font-numbers" x="50%" y="14%">12</text>
 
     <!-- hours and minutes -->
-    <text id="no1min" class="color-primary font-numbers-minutes display-none" x="74%" y="14%">5</text>
-    <text id="no2min" class="color-primary font-numbers-minutes display-none" x="90%" y="29%">10</text>
+    <text id="no1min" class="color-primary font-numbers-minutes display-none" x="73%" y="12%">5</text>
+    <text id="no2min" class="color-primary font-numbers-minutes display-none" x="91%" y="29%">10</text>
     <text id="no3min" class="color-primary font-numbers display-none" x="91%" y="54%">3</text>
-    <text id="no4min" class="color-primary font-numbers-minutes display-none" x="90%" y="76%">20</text>
-    <text id="no5min" class="color-primary font-numbers-minutes display-none" x="74%" y="94%">25</text>
-    <text id="no6min" class="color-primary font-numbers display-none" x="50%" y="94%">6</text>
-    <text id="no7min" class="color-primary font-numbers-minutes display-none" x="26%" y="94%">35</text>
-    <text id="no8min" class="color-primary font-numbers-minutes display-none" x="10%" y="76%">40</text>
-    <text id="no9min" class="color-primary font-numbers display-none" x="10%" y="54%">9</text>
-    <text id="no10min" class="color-primary font-numbers-minutes display-none" x="10%" y="29%">50</text>
-    <text id="no11min" class="color-primary font-numbers-minutes display-none" x="26%" y="14%">55</text>
+    <text id="no4min" class="color-primary font-numbers-minutes display-none" x="91%" y="75%">20</text>
+    <text id="no5min" class="color-primary font-numbers-minutes display-none" x="73%" y="93%">25</text>
+    <text id="no6min" class="color-primary font-numbers display-none" x="50%" y="95%">6</text>
+    <text id="no7min" class="color-primary font-numbers-minutes display-none" x="27%" y="93%">35</text>
+    <text id="no8min" class="color-primary font-numbers-minutes display-none" x="10%-2" y="75%">40</text>
+    <text id="no9min" class="color-primary font-numbers display-none" x="10%-2" y="54%">9</text>
+    <text id="no10min" class="color-primary font-numbers-minutes display-none" x="10%-2" y="29%">50</text>
+    <text id="no11min" class="color-primary font-numbers-minutes display-none" x="27%" y="12%">55</text>
     <text id="no12min" class="color-primary font-numbers display-none" x="50%" y="14%">12</text>
 
-    <text id="js-stats1" class="color-primary font-stats1" x="25%" y="52%" />
+    <text id="js-stats1" class="color-primary font-stats1" x="24%" y="52%" />
     <image id="steps-img" class="color-primary" width="18" height="18" x="$+4" y="$-41" href="images/stat_steps_solid_24px.png"/>
 
-    <text id="js-bat-division" class="color-primary stats-division" x="51%" y="25%+16"></text>
+    <text id="js-bat-division" class="color-primary stats-division" x="51%" y="22%"></text>
 
-    <text id="js-stats2" class="color-primary font-stats2" x="77%" y="52%" />
-    <image id="heart-rate-img" class="color-primary" width="18" height="18" x="$-45" y="$-41" href="images/stat_hr_solid_24px.png"/>
+    <text id="js-stats2" class="color-primary font-stats2" x="69%" y="52%" />
+    <image id="heart-rate-img" class="color-primary" width="18" height="18" x="$+5" y="$-41" href="images/stat_hr_solid_24px.png"/>
 
-    <svg width="40" height="40" x="50%-20" y="65%">
+    <svg width="40" height="40" x="50%-20" y="69%">
         <text id="day" class="color-primary font-day" x="50%" y="10%">NA</text>
-        <text id="date" class="color-primary font-date" x="50%" y="50%+10" />
+        <text id="date" class="color-primary font-date" x="50%" y="50%+7" />
     </svg>
 
     <g id="minutes" transform="translate(50%,50%)">

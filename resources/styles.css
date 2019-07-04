@@ -81,16 +81,56 @@
 }
 
 .font-numbers-minutes {
-    font-family: "Colfax-Regular";
+    font-family: "Colfax-Bold";
     width: 40;
     height: 40;
-    font-size: 28;
+    font-size: 20;
     text-anchor: middle;
 }
 
 
 line {
     stroke-linecap: round;
+}
+
+
+line.minutes-hand-back {
+    fill: white;
+    x1: 0;
+    y1: -8%;
+    x2: 0;
+    y2: -44%;
+    stroke-width: 9;
+}
+
+
+line.minutes-hand {
+    fill: #f57d26;
+    x1: 0;
+    y1: -8%-1;
+    x2: 0;
+    y2: -44%+1;
+    stroke-width: 6;
+}
+
+
+line.hours-hand-back {
+    fill: white;
+    x1: 0;
+    y1: -8%;
+    x2: 0;
+    y2: -31%;
+    stroke-width: 9;
+}
+
+
+line.hours-hand {
+    fill: #f57d26;
+    x1: 0;
+    y1: -8%-1;
+    x2: 0;
+    y2: -31%+1;
+    stroke-width: 6;
 }
 
 
@@ -101,46 +141,6 @@ line.time-hand {
     x2: 0;
     y2: -10%-3;
     stroke-width: 3;
-}
-
-
-line.minutes-hand-back {
-    fill: white;
-    x1: 0;
-    y1: -8%;
-    x2: 0;
-    y2: -46%;
-    stroke-width: 9;
-}
-
-
-line.minutes-hand {
-    fill: #f57d26;
-    x1: 0;
-    y1: -8%-1;
-    x2: 0;
-    y2: -46%+1;
-    stroke-width: 6;
-}
-
-
-line.hours-hand-back {
-    fill: white;
-    x1: 0;
-    y1: -8%;
-    x2: 0;
-    y2: -32%;
-    stroke-width: 9;
-}
-
-
-line.hours-hand {
-    fill: #f57d26;
-    x1: 0;
-    y1: -8%-1;
-    x2: 0;
-    y2: -32%+1;
-    stroke-width: 6;
 }
 
 

@@ -1,17 +1,16 @@
 function mySettings(props) {
     let colorSet = [
-        {color: "black"},
+        {color: "#000000"},
         {color: "#334764"},
         {color: "#c4b9a4"},
         {color: "#f57d26"},
-        {color: "#000000"},
         {color: "#3182DE"},
         {color: "#8080FF"},
         {color: "#14D3F5"},
         {color: "#505050"},
         {color: "#303030"},
         {color: "#00A629"},
-        {color: "#00A629"},
+        {color: "#134022"},
         {color: "#5B4CFF"},
         {color: "#BCD8F8"},
         {color: "#A0A0A0"},
@@ -29,7 +28,14 @@ function mySettings(props) {
         {color: "#D828B8"},
         {color: "#FFFFFF"},
         {color: "#E4FA3C"},
-        {color: "#394003"}
+        {color: "#394003"},
+        {color: "#FFB6C1"},
+        {color: "#FFA07A"},
+        {color: "#c7a270"},
+        {color: "#7095c7"},
+        {color: "#c77770"},
+        {color: "#c1c770"},
+        {color: "#c49c67"}
     ];
     return (
         <Page>
