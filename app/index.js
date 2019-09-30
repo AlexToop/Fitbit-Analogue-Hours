@@ -8,6 +8,7 @@ import {today} from 'user-activity';
 import {HeartRateSensor} from "heart-rate";
 import {vibration} from "haptics";
 import * as messaging from "messaging";
+import * as weather from '../fitbit-weather/app';
 
 const dateText = document.getElementById('date');
 const dayText = document.getElementById('day');
@@ -64,10 +65,15 @@ const no12min = document.getElementById('no12min');
 const hoursColourBar = document.getElementById('hours-hand');
 const minutesColourBar = document.getElementById('minutes-hand');
 const timeMiddleDotColour = document.getElementById('timeMiddleDot');
+
+const weatherElement = document.getElementById('weather');
+const weatherIcon = document.getElementById('weather-img');
+
 // for battery saving
 const sensors = [];
 var noBatteryDots = 5;
 clock.granularity = "minutes";
+setWeather(weather);
 
 clock.ontick = (evt) => {
   let date = evt.date;
@@ -306,6 +312,11 @@ function updateBattery(battery) {
 
 }
 
+function setWeather(weather) {
+  weather = util.getWeatherUpdate(weather);
+  weatherElement.text = util.getWeatherTemperature(weather);
+  weatherIcon.href = "images/weather-icon-" + util.getWeatherConditionCode(weather) + ".png";
+}
 
 function updateActivity(today) {
   // toFixed can be changed to decimal place accuracy

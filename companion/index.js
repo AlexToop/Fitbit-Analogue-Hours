@@ -1,8 +1,9 @@
 // import * as weather from '../fitbit-weather/companion';
 import * as messaging from "messaging";
 import {settingsStorage} from "settings";
+import * as weather from '../fitbit-weather/companion';
 
-// weather.setup({provider: weather.Providers.darksky, apiKey: ''});
+weather.setup({provider: weather.Providers.darksky, apiKey: '652af317a46e8cb9beab2660c0d5a001'});
 
 // Message socket opens
 messaging.peerSocket.onopen = () => {

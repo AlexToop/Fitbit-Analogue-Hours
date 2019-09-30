@@ -62,6 +62,9 @@
         <text id="date" class="color-primary font-date" x="50%" y="50%+7" />
     </svg>
 
+    <text id="weather" class="color-primary font-stats1" x="51%" y="30%" />
+    <image id="weather-img" class="color-primary" width="30" height="30" x="46%" y="31%" href="images/weather-icon-1.png"/>
+
     <g id="minutes" transform="translate(50%,50%)">
         <use href="#minutes_bar" />
     </g>
