@@ -7,3 +7,4 @@
 
 # file types
 *.iml
+.DS_Store
