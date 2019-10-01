@@ -12,7 +12,7 @@ import * as weather from '../fitbit-weather/app';
 
 const dateText = document.getElementById('date');
 const dayText = document.getElementById('day');
-const statsText1 = document.getElementById('js-stats1');
+// const statsText1 = document.getElementById('js-stats1');
 const statsText2 = document.getElementById('js-stats2');
 const statsDivi = document.getElementById('js-bat-division');
 const hoursBar = document.getElementById('hours');
@@ -20,7 +20,7 @@ const minutesBar = document.getElementById('minutes');
 const backTile = document.getElementById('back');
 
 const hrImg = document.getElementById('heart-rate-img');
-const stepImg = document.getElementById('steps-img');
+// const stepImg = document.getElementById('steps-img');
 
 const inv1 = document.getElementById('inv1');
 const inv2 = document.getElementById('inv2');
@@ -90,7 +90,8 @@ clock.ontick = (evt) => {
   dayText.text = day;
 
   updateBattery(battery);
-  updateActivity(today);
+  // updateActivity(today);
+  setWeather(weather);
 };
 
 
@@ -110,7 +111,8 @@ display.addEventListener("change", () => {
     // Have sensors running when screen is on.
     sensors.map(sensor => sensor.start());
     updateBattery(battery);
-    updateActivity(today);
+    // updateActivity(today);
+    setWeather(weather);
   } else {
     // Have sensors off when screen is off.
     sensors.map(sensor => sensor.stop());
@@ -168,18 +170,21 @@ messaging.peerSocket.onmessage = evt => {
     no11min.style.fill = color;
     no12min.style.fill = color;
 
-    statsText1.style.fill = color;
+    // statsText1.style.fill = color;
     statsDivi.style.fill = color;
     statsText2.style.fill = color;
     dateText.style.fill = color;
     dayText.style.fill = color;
 
     hrImg.style.fill = color;
-    stepImg.style.fill = color;
+    // stepImg.style.fill = color;
 
     hoursColourBar.style.fill = color;
     minutesColourBar.style.fill = color;
     timeMiddleDotColour.style.fill = color;
+
+    weatherElement.style.fill = color;
+    weatherIcon.style.fill = color;
   }
   if (evt.data.key === "numbersStyle" && evt.data.newValue) {
     let styleString = JSON.parse(evt.data.newValue);
@@ -303,13 +308,7 @@ messaging.peerSocket.onmessage = evt => {
 
 
 function updateBattery(battery) {
-  // noBatteryDots = parseInt(battery.chargeLevel/25) + 1;
-  // var batteryText = "|";
-  // for (var i = 1; i < noBatteryDots; i++){
-  //   batteryText += " |";
-  // }
   statsDivi.text = battery.chargeLevel + "%";
-
 }
 
 function setWeather(weather) {
@@ -318,7 +317,6 @@ function setWeather(weather) {
   weatherIcon.href = "images/weather-icon-" + util.getWeatherConditionCode(weather) + ".png";
 }
 
-function updateActivity(today) {
-  // toFixed can be changed to decimal place accuracy
-  statsText1.text = (today.adjusted.steps / 1000).toFixed(0) + "K";
-}
+// function updateActivity(today) {
+//   statsText1.text = (today.adjusted.steps / 1000).toFixed(0) + "K";
+// }

@@ -49,12 +49,15 @@
     <text id="no11min" class="color-primary font-numbers-minutes display-none" x="27%" y="12%">55</text>
     <text id="no12min" class="color-primary font-numbers display-none" x="50%" y="14%">12</text>
 
-    <text id="js-stats1" class="color-primary font-stats1" x="24%" y="52%" />
-    <image id="steps-img" class="color-primary" width="18" height="18" x="$+4" y="$-41" href="images/stat_steps_solid_24px.png"/>
+    <!-- <text id="js-stats1" class="color-primary font-stats1" x="24%" y="52%" />
+    <image id="steps-img" class="color-primary" width="18" height="18" x="$+4" y="$-41" href="images/stat_steps_solid_24px.png"/> -->
 
-    <text id="js-bat-division" class="color-primary stats-division" x="51%" y="22%"></text>
+    <!-- <text id="js-bat-division" class="color-primary stats-division" x="51%" y="22%"></text> -->
+    <text id="js-bat-division" class="color-primary stats-division" x="10%" y="97%"></text>
 
-    <text id="js-stats2" class="color-primary font-stats2" x="69%" y="52%" />
+    <!-- <text id="js-stats2" class="color-primary font-stats2" x="69%" y="52%" />
+    <image id="heart-rate-img" class="color-primary" width="18" height="18" x="$+5" y="$-41" href="images/stat_hr_solid_24px.png"/> -->
+    <text id="js-stats2" class="color-primary font-stats2" x="86%" y="97%" />
     <image id="heart-rate-img" class="color-primary" width="18" height="18" x="$+5" y="$-41" href="images/stat_hr_solid_24px.png"/>
 
     <svg width="40" height="40" x="50%-20" y="69%">
@@ -62,8 +65,10 @@
         <text id="date" class="color-primary font-date" x="50%" y="50%+7" />
     </svg>
 
-    <text id="weather" class="color-primary font-stats1" x="51%" y="30%" />
-    <image id="weather-img" class="color-primary" width="30" height="30" x="46%" y="31%" href="images/weather-icon-1.png"/>
+    <!-- <text id="weather" class="color-primary font-stats1" x="51%" y="30%" />
+    <image id="weather-img" class="color-primary" width="30" height="30" x="46%" y="31%" href="images/weather-icon-1.png"/> -->
+    <text id="weather" class="color-primary font-stats1" x="8%" y="8%" />
+    <image id="weather-img" class="color-primary" width="30" height="30" x="89%" y="0%" href="images/weather-icon-1.png"/>
 
     <g id="minutes" transform="translate(50%,50%)">
         <use href="#minutes_bar" />

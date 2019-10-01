@@ -5,7 +5,6 @@ export function zeroPad(i) {
     return i;
 }
 
-
 export function getDay(dayNo) {
     var weekday = new Array(7);
     weekday[0] = "SU";
@@ -18,10 +17,9 @@ export function getDay(dayNo) {
     return weekday[dayNo];
 }
 
-
 export function getWeatherUpdate(weather) {
-    // return the cached value if it is less than 30 minutes old
-    weather.fetch(30 * 60 * 1000)
+    // return the cached value if it is less than 20 minutes old
+    weather.fetch(20 * 60 * 1000)
         .then(weather => console.log(JSON.stringify(weather)))
         .catch(error => weatherError(error));
     return (weather) ? weather : null;
